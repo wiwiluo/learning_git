@@ -1,0 +1,17 @@
+记录了我学习git的一些知识点
+git init
+进入想要创建版本库的文件夹，执行git init命令，创建版本库
+
+git add filename
+
+git commit -m "commit description"
+
+git status
+
+git log
+git log --pretty=oneline
+
+git diff
+
+git config --global gui.encoding utf-8
+解决gui中文乱码
