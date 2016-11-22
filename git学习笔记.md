@@ -111,3 +111,27 @@ git push -u origin master
 ```
 git push origin master
 ```
+
+warning: refname 'HEAD' is ambiguous的解决方案，首先通过git branch查看分支情况，然后删除掉不需要的分支
+删除分支命令：git branch -D branchName
+
+
+```
+git checkout -b dev
+```
+> 创建dev分支，然后切换到dev分支，相当于下面两个命令的合并执行
+
+```
+git branch dev2
+git checkout dev2
+```
+
+```
+git merge dev
+```
+> 合并指定分支dev到当前分支
+
+```
+git log --graph --pretty=oneline --abbrev-commit
+```
+> 查看分支合并图
